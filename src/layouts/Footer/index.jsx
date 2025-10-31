@@ -15,16 +15,16 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900 text-white">
+    <footer className="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {/* About Section */}
           <div className="space-y-3 sm:space-y-4 sm:col-span-2 lg:col-span-1">
-            <h3 className="text-xl sm:text-2xl font-bold text-purple-200">
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-200">
               Portfolio
             </h3>
-            <p className="text-purple-200 text-xs sm:text-sm leading-relaxed">
+            <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
               Nhà phát triển đầy nhiệt huyết tạo ra các giải pháp sáng tạo với
               công nghệ hiện đại. Hãy cùng nhau xây dựng điều gì đó tuyệt vời!
             </p>
@@ -34,7 +34,7 @@ const Footer = () => {
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 sm:w-10 sm:h-10 bg-purple-700 rounded-full flex items-center justify-center hover:bg-purple-600 transition-all hover:scale-110"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-all hover:scale-110"
                 aria-label="Github"
               >
                 <Github className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -43,7 +43,7 @@ const Footer = () => {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 sm:w-10 sm:h-10 bg-purple-700 rounded-full flex items-center justify-center hover:bg-purple-600 transition-all hover:scale-110"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-all hover:scale-110"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -52,7 +52,7 @@ const Footer = () => {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 sm:w-10 sm:h-10 bg-purple-700 rounded-full flex items-center justify-center hover:bg-purple-600 transition-all hover:scale-110"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-all hover:scale-110"
                 aria-label="Twitter"
               >
                 <Twitter className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -61,7 +61,7 @@ const Footer = () => {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 sm:w-10 sm:h-10 bg-purple-700 rounded-full flex items-center justify-center hover:bg-purple-600 transition-all hover:scale-110"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-all hover:scale-110"
                 aria-label="Facebook"
               >
                 <Facebook className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -71,43 +71,43 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="space-y-3 sm:space-y-4">
-            <h3 className="text-lg sm:text-xl font-bold text-purple-200">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-200">
               Quick Links
             </h3>
             <ul className="space-y-2">
               <li>
                 <a
                   href="/"
-                  className="text-purple-200 hover:text-white transition-colors text-xs sm:text-sm flex items-center gap-2 group"
+                  className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm flex items-center gap-2 group"
                 >
-                  <span className="w-0 h-0.5 bg-purple-400 group-hover:w-3 sm:group-hover:w-4 transition-all"></span>
+                  <span className="w-0 h-0.5 bg-gray-500 group-hover:w-3 sm:group-hover:w-4 transition-all"></span>
                   Trang chủ
                 </a>
               </li>
               <li>
                 <a
                   href="/about"
-                  className="text-purple-200 hover:text-white transition-colors text-xs sm:text-sm flex items-center gap-2 group"
+                  className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm flex items-center gap-2 group"
                 >
-                  <span className="w-0 h-0.5 bg-purple-400 group-hover:w-3 sm:group-hover:w-4 transition-all"></span>
+                  <span className="w-0 h-0.5 bg-gray-500 group-hover:w-3 sm:group-hover:w-4 transition-all"></span>
                   Về tôi
                 </a>
               </li>
               <li>
                 <a
                   href="/project"
-                  className="text-purple-200 hover:text-white transition-colors text-xs sm:text-sm flex items-center gap-2 group"
+                  className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm flex items-center gap-2 group"
                 >
-                  <span className="w-0 h-0.5 bg-purple-400 group-hover:w-3 sm:group-hover:w-4 transition-all"></span>
+                  <span className="w-0 h-0.5 bg-gray-500 group-hover:w-3 sm:group-hover:w-4 transition-all"></span>
                   Dự án
                 </a>
               </li>
               <li>
                 <a
                   href="/about"
-                  className="text-purple-200 hover:text-white transition-colors text-xs sm:text-sm flex items-center gap-2 group"
+                  className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm flex items-center gap-2 group"
                 >
-                  <span className="w-0 h-0.5 bg-purple-400 group-hover:w-3 sm:group-hover:w-4 transition-all"></span>
+                  <span className="w-0 h-0.5 bg-gray-500 group-hover:w-3 sm:group-hover:w-4 transition-all"></span>
                   Liên hệ
                 </a>
               </li>
@@ -116,16 +116,16 @@ const Footer = () => {
 
           {/* Services */}
           <div className="space-y-3 sm:space-y-4">
-            <h3 className="text-lg sm:text-xl font-bold text-purple-200">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-200">
               Dịch vụ
             </h3>
             <ul className="space-y-2">
               <li>
                 <a
                   href="/services/web"
-                  className="text-purple-200 hover:text-white transition-colors text-xs sm:text-sm flex items-center gap-2 group"
+                  className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm flex items-center gap-2 group"
                 >
-                  <span className="w-0 h-0.5 bg-purple-400 group-hover:w-3 sm:group-hover:w-4 transition-all"></span>
+                  <span className="w-0 h-0.5 bg-gray-500 group-hover:w-3 sm:group-hover:w-4 transition-all"></span>
                   Phát triển web
                 </a>
               </li>
@@ -133,18 +133,18 @@ const Footer = () => {
               <li>
                 <a
                   href="/services/ui"
-                  className="text-purple-200 hover:text-white transition-colors text-xs sm:text-sm flex items-center gap-2 group"
+                  className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm flex items-center gap-2 group"
                 >
-                  <span className="w-0 h-0.5 bg-purple-400 group-hover:w-3 sm:group-hover:w-4 transition-all"></span>
+                  <span className="w-0 h-0.5 bg-gray-500 group-hover:w-3 sm:group-hover:w-4 transition-all"></span>
                   Thiết kế UI/UX
                 </a>
               </li>
               <li>
                 <a
                   href="/services/consulting"
-                  className="text-purple-200 hover:text-white transition-colors text-xs sm:text-sm flex items-center gap-2 group"
+                  className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm flex items-center gap-2 group"
                 >
-                  <span className="w-0 h-0.5 bg-purple-400 group-hover:w-3 sm:group-hover:w-4 transition-all"></span>
+                  <span className="w-0 h-0.5 bg-gray-500 group-hover:w-3 sm:group-hover:w-4 transition-all"></span>
                   Tư vấn
                 </a>
               </li>
@@ -153,19 +153,19 @@ const Footer = () => {
 
           {/* Newsletter */}
           <div className="space-y-3 sm:space-y-4 sm:col-span-2 lg:col-span-1">
-            <h3 className="text-lg sm:text-xl font-bold text-purple-200">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-200">
               Luôn kết nối
             </h3>
-            <p className="text-purple-200 text-xs sm:text-sm">
+            <p className="text-gray-400 text-xs sm:text-sm">
              Nhận thông tin cập nhật về các dự án mới và bài viết công nghệ.
             </p>
             <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-2">
               <input
                 type="email"
                 placeholder="Your email"
-                className="flex-1 px-3 sm:px-4 py-2 rounded-lg bg-purple-800 border border-purple-600 text-white placeholder-purple-300 focus:outline-none focus:border-purple-400 text-xs sm:text-sm"
+                className="flex-1 px-3 sm:px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:border-gray-600 text-xs sm:text-sm"
               />
-              <button className="px-4 sm:px-6 py-2 bg-purple-500 hover:bg-purple-600 rounded-lg font-semibold transition-colors text-xs sm:text-sm whitespace-nowrap">
+              <button className="px-4 sm:px-6 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg font-semibold transition-colors text-xs sm:text-sm whitespace-nowrap">
                 Liên hệ
               </button>
             </div>
@@ -174,10 +174,10 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-purple-700">
+      <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4">
-            <p className="text-purple-200 text-xs sm:text-sm flex items-center gap-1 text-center sm:text-left">
+            <p className="text-gray-400 text-xs sm:text-sm flex items-center gap-1 text-center sm:text-left">
               © {currentYear} Made with{" "}
               <Heart className="w-3 h-3 sm:w-4 sm:h-4 text-red-400 fill-current" />{" "}
               by Truong
@@ -185,19 +185,19 @@ const Footer = () => {
             <div className="flex items-center gap-4">
               <a
                 href="/privacy"
-                className="text-purple-200 hover:text-white transition-colors text-xs sm:text-sm"
+                className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm"
               >
                Chính sách bảo mật
               </a>
               <a
                 href="/terms"
-                className="text-purple-200 hover:text-white transition-colors text-xs sm:text-sm"
+                className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm"
               >
                 Điều khoản
               </a>
               <button
                 onClick={scrollToTop}
-                className="w-9 h-9 sm:w-10 sm:h-10 bg-purple-700 rounded-full flex items-center justify-center hover:bg-purple-600 transition-all hover:scale-110"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-all hover:scale-110"
                 aria-label="Scroll to top"
               >
                 <ArrowUp className="w-4 h-4 sm:w-5 sm:h-5" />

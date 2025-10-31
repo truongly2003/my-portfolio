@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,37 +8,22 @@ const Header = () => {
   const navLinkClass = ({ isActive }) =>
     `${
       isActive
-        ? "text-purple-600 font-semibold"
-        : "text-gray-700 hover:text-purple-600"
-    } transition-colors duration-200`;
+        ? "text-blue-400 font-semibold relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-gradient-to-r after:from-blue-400 after:to-purple-400"
+        : "text-gray-300 hover:text-blue-400"
+    } transition-all duration-300 pb-1`;
 
   return (
-    <header className="sticky top-0 z-50  shadow-sm">
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-5 py-4 relative">
-        {/* Logo */}
-        <h1 className="text-xl font-bold text-purple-800">
-          {/* <NavLink to="/" onClick={() => setMenuOpen(false)}>
-            {"Truong Xin Chao".split("").map((char, index) => (
-              <span
-                key={index}
-                className="inline-block animate-bounce"
-                style={{
-                  animationDelay: `${index * 0.1}s`,
-                  animationDuration: "2s",
-                }}
-              >
-                {char === " " ? "\u00A0" : char}
-              </span>
-            ))}
-          </NavLink> */}
-
-          <NavLink to="/" className={navLinkClass}>
+    <header className="sticky top-0 z-50 backdrop-blur-xl   w-full max-w-6xl mx-auto px-4 ">
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4 relative">
+        {/* Logo với gradient text */}
+        <NavLink to="/" className="group">
+          <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 hover:scale-105 transition-transform duration-300">
             Trưởng Xin Chào
-          </NavLink>
-        </h1>
+          </h1>
+        </NavLink>
 
         {/* Menu desktop */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex items-center space-x-8">
           <NavLink to="/" className={navLinkClass}>
             Trang chủ
           </NavLink>
@@ -52,39 +37,67 @@ const Header = () => {
 
         {/* Icon menu (mobile) */}
         <button
-          className="md:hidden text-gray-700 ml-4 p-2 rounded hover:bg-gray-100 transition"
+          className="md:hidden text-gray-300 p-2 rounded-lg hover:bg-gray-800/80 transition-all duration-300 border border-blue-500/30 hover:border-blue-400/50 hover:text-blue-400"
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
         >
-          <Menu size={26} />
+          {menuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
-        {/* Menu mobile — dùng absolute */}
+        {/* Menu mobile overlay */}
         {menuOpen && (
-          <div className="absolute top-full right-0  bg-white z-20 border-t border-gray-100 shadow-md md:hidden animate-fadeIn">
-            <nav className="flex flex-col   space-y-4 p-6">
-              <NavLink
-                to="/"
-                className={navLinkClass}
-                onClick={() => setMenuOpen(false)}
-              >
-                Trang chủ
-              </NavLink>
-              <NavLink
-                to="/about"
-                className={navLinkClass}
-                onClick={() => setMenuOpen(false)}
-              >
-                Giới thiệu
-              </NavLink>
-              <NavLink
-                to="/project"
-                className={navLinkClass}
-                onClick={() => setMenuOpen(false)}
-              >
-                Dự án
-              </NavLink>
-            </nav>
-          </div>
+          <>
+            {/* Backdrop */}
+            <div 
+              className="fixed inset-0 bg-black/50 backdrop-blur-sm md:hidden"
+              onClick={() => setMenuOpen(false)}
+            />
+            
+            {/* Menu panel */}
+            <div className="absolute top-full right-0 mt-2 w-64 bg-gray-900/95 backdrop-blur-xl border border-blue-500/30 rounded-2xl shadow-2xl shadow-blue-500/20 md:hidden overflow-hidden">
+              <nav className="flex flex-col p-4 space-y-2">
+                <NavLink
+                  to="/"
+                  className={({ isActive }) => 
+                    `px-4 py-3 rounded-xl transition-all duration-300 ${
+                      isActive 
+                        ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold" 
+                        : "text-gray-300 hover:bg-gray-800/80 hover:text-blue-400"
+                    }`
+                  }
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Trang chủ
+                </NavLink>
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) => 
+                    `px-4 py-3 rounded-xl transition-all duration-300 ${
+                      isActive 
+                        ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold" 
+                        : "text-gray-300 hover:bg-gray-800/80 hover:text-blue-400"
+                    }`
+                  }
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Giới thiệu
+                </NavLink>
+                <NavLink
+                  to="/project"
+                  className={({ isActive }) => 
+                    `px-4 py-3 rounded-xl transition-all duration-300 ${
+                      isActive 
+                        ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold" 
+                        : "text-gray-300 hover:bg-gray-800/80 hover:text-blue-400"
+                    }`
+                  }
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Dự án
+                </NavLink>
+              </nav>
+            </div>
+          </>
         )}
       </div>
     </header>

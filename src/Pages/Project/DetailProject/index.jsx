@@ -23,7 +23,7 @@ function DetailProject() {
           </p>
           <button
             onClick={() => navigate(-1)}
-            className="text-purple-500 hover:text-purple-600 font-medium transition-colors"
+            className="text-white hover:text-purple-600 font-medium transition-colors"
           >
             ← Quay lại trang trước
           </button>
@@ -46,11 +46,12 @@ function DetailProject() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto py-2 px-4">
+  <div className="bg-gradient-to-br from-gray-800 via-black to-gray-700 ">
+      <div className="max-w-4xl mx-auto py-8 px-4 ">
       {/* Back Button */}
       <button
         onClick={() => navigate(-1)}
-        className="flex items-center gap-2 mb-2 text-purple-500 hover:text-purple-600 transition-colors font-medium group"
+        className="flex items-center gap-2 mb-2 text-white hover:text-gray-100 transition-colors font-medium group"
       >
         <ArrowLeft
           size={20}
@@ -60,14 +61,14 @@ function DetailProject() {
       </button>
 
       {/* Title */}
-      <h1 className="text-4xl font-bold mb-6 text-gray-900 bg-gradient-to-r from-purple-600 to-purple-500 bg-clip-text text-transparent">
+      <h1 className="text-4xl font-bold mb-6  bg-gradient-to text-white bg-clip-text text-transparent">
         {project.title}
       </h1>
       {/* description image */}
       {Array.isArray(project.image) &&
         project.image.length > 0 &&
         project.image[currentImageIndex]?.description && (
-          <p className="text-gray-600 mb-2 italic text-sm sm:text-base">
+          <p className="text-gray-200 mb-2 italic text-sm sm:text-base">
             {project.image[currentImageIndex].description}
           </p>
         )}
@@ -80,20 +81,20 @@ function DetailProject() {
             <img
               src={project.image[currentImageIndex]?.url}
               alt={`${project.title} - Image ${currentImageIndex + 1}`}
-              className="w-full h-auto aspect-video object-cover md:h-[450px] "
+              className="w-full h-auto aspect-video object-cover md:h-[450px]  brightness-90"
             />
             {/* Navigation Buttons */}
             {project.image.length > 1 && (
               <div className="absolute top-1/2 left-0 right-0 flex justify-between transform -translate-y-1/2 px-4">
                 <button
                   onClick={handlePrevImage}
-                  className="p-2 bg-purple-500 text-white rounded-full hover:bg-purple-600 transition-colors"
+                  className="p-2 bg-gray-600 text-white rounded-full hover:bg-gray-700 transition-colors"
                 >
                   <ChevronLeft size={24} />
                 </button>
                 <button
                   onClick={handleNextImage}
-                  className="p-2 bg-purple-500 text-white rounded-full hover:bg-purple-600 transition-colors"
+                  className="p-2 bg-gray-600 text-white rounded-full hover:bg-gray-700 transition-colors"
                 >
                   <ChevronRight size={24} />
                 </button>
@@ -107,28 +108,28 @@ function DetailProject() {
             )}
           </div>
         ) : (
-          <p className="text-gray-600">Không có hình ảnh nào để hiển thị.</p>
+          <p className="text-gray-200">Không có hình ảnh nào để hiển thị.</p>
         )}
       </div>
 
       {/* Description */}
       <div className="mb-8">
-        <h2 className="text-xl font-semibold text-gray-800 mb-3">
+        <h2 className="text-xl font-semibold text-white mb-3">
           Mô tả dự án
         </h2>
-        <p className="text-gray-700 leading-relaxed">{project.description}</p>
+        <p className="text-gray-200 leading-relaxed">{project.description}</p>
       </div>
       {/* Architecture Section */}
       {project.architectureImage && project.architectureImage.url && (
         <div className="mb-8">
-          <h2 className="text-xl font-semibold text-gray-800 mb-3">
+          <h2 className="text-xl font-semibold text-white mb-3">
             Mô tả kiến trúc
           </h2>
           <div className="flex flex-col items-center">
             <img
               src={project.architectureImage.url}
               alt="Architecture Diagram"
-              className="rounded-xl shadow-lg border border-gray-500 mb-4"
+              className="rounded-xl shadow-lg border border-gray-500 mb-4 brightness-90"
             />
             {project.architectureImage.description && (
               <p className="text-gray-600 text-center max-w-2xl">
@@ -142,16 +143,16 @@ function DetailProject() {
       {/* Key Features */}
       {project.keyFeatures && Object.keys(project.keyFeatures).length > 0 && (
         <div className="mb-8">
-          <h2 className="text-xl font-semibold text-gray-800 mb-3">
+          <h2 className="text-xl font-semibold text-white mb-3">
             Các tính năng chính
           </h2>
 
-          <div className="text-gray-700 leading-relaxed ml-8">
+          <div className="text-gray-200 leading-relaxed ml-8">
             {Object.entries(project.keyFeatures).map(
               ([key, features]) =>
                 features.length > 0 && (
                   <div key={key} className="mb-4">
-                    <h3 className="text-lg font-medium text-gray-800 mb-2 capitalize">
+                    <h3 className="text-lg font-medium text-white mb-2 capitalize">
                       {(() => {
                         const titles = {
                           user: "Người dùng",
@@ -178,14 +179,14 @@ function DetailProject() {
 
       {/* Tags */}
       <div className="mb-8">
-        <h3 className="text-lg font-semibold text-gray-800 mb-3">
+        <h3 className="text-lg font-semibold text-white mb-3">
           Công nghệ sử dụng
         </h3>
         <div className="flex flex-wrap gap-2">
           {project.tags.map((tag, idx) => (
             <span
               key={idx}
-              className="bg-purple-50 text-purple-600 border border-purple-200 px-4 py-2 rounded-full text-sm font-medium hover:bg-purple-100 transition-colors"
+              className=" text-gray-200 border border-purple-200 px-4 py-2 rounded-full text-sm font-medium  transition-colors"
             >
               {tag}
             </span>
@@ -199,7 +200,7 @@ function DetailProject() {
           href={project.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-6 py-3 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors shadow-md hover:shadow-lg font-medium"
+          className="flex items-center gap-2 px-6 py-3 border hover:text-gray-300 text-white rounded-lg hover:bg-gray-600 transition-colors shadow-md hover:shadow-lg font-medium"
         >
           <Github size={20} />
           <span>Xem mã nguồn</span>
@@ -209,7 +210,7 @@ function DetailProject() {
             href={project.demo}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-6 py-3 bg-white text-purple-500 border-2 border-purple-500 rounded-lg hover:bg-purple-50 transition-colors shadow-md hover:shadow-lg font-medium"
+            className="flex items-center gap-2 px-6 py-3 bg-white text-white border-2 border-purple-500 rounded-lg hover:bg-purple-50 transition-colors shadow-md hover:shadow-lg font-medium"
           >
             <ExternalLink size={20} />
             <span>Xem Demo</span>
@@ -217,6 +218,7 @@ function DetailProject() {
         )}
       </div>
     </div>
+  </div>
   );
 }
 

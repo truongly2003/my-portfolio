@@ -124,8 +124,59 @@ export const projectsData = [
       ],
     },
   },
+
   {
     id: 2,
+    title: "Send Flow (Đang Phát Triển)",
+    description: `Send-Flow là hệ thống SaaS gửi email hàng loạt,
+     cho phép người dùng quản lý chiến dịch email, theo dõi hiệu quả gửi mail
+      (thành công, thất bại, lượt mở, lượt click), đồng thời hỗ trợ mua gói dịch vụ
+       và tích hợp SMTP. Hệ thống bảo mật cao với JWT,quản lý người dùng, giao dịch và thống kê hiệu suất.`,
+    tags: [
+      "Java Spring boot",
+      "Spring Data JPA",
+      "Spring Security",
+      "WebSocket",
+      "RabbitMQ",
+      "MySQL",
+      "React JS",
+    ],
+    link: "https://github.com/truongly2003/send-flow",
+    image: [
+      {
+        id: 1,
+        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1761916067/sendflow/client.png",
+        description: "Trang người dùng đang cập nhật",
+      },
+      {
+        id: 2,
+        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1761916236/sendflow/admin.png",
+        description: "Trang quản lý đang cập nhật",
+      },
+      {
+        id: 3,
+        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1761915672/sendflow/home.png",
+        description: "Trang chủ ",
+      },
+    ],
+
+    keyFeatures: {
+      "Người dùng": [
+        "Bảo mật cao với xác thực và phân quyền bằng JWT.",
+        "Quản lý tài khoản dễ dàng: đăng ký, quên mật khẩu, đổi mật khẩu với xác thực Gmail.",
+        "Tích hợp SMTP và mua gói gửi mail linh hoạt.",
+        "Tạo chiến dịch, gửi email hàng loạt và theo dõi chi tiết hiệu quả chiến dịch (thành công, thất bại, lượt mở, lượt click).",
+      ],
+      "Quản trị": [
+        "Thống kê toàn diện để nắm bắt hiệu suất và hành vi người dùng.",
+        "Quản lý giao dịch và lịch sử mua gói của người dùng.",
+        "Quản lý các gói dịch vụ một cách trực quan.",
+        "Quản lý người dùng và giám sát hoạt động hệ thống.",
+      ],
+    },
+  },
+  {
+    id: 3,
     title: "Book Tour",
     description: `Phát triển một nền tảng web cho phép người dùng tìm kiếm, đặt và 
     thanh toán các tour du lịch trực tuyến. Quy trình đặt chỗ, xác thực người dùng và 
@@ -149,32 +200,5 @@ export const projectsData = [
         "Phát triển trang danh sách tour cho khách hàng với các tính năng: lọc, tìm kiếm và phân trang",
       ],
     },
-  },
-
-  {
-    id: 3,
-    title: "Send Flow (Đang Phát Triển)",
-    description: "Đang Cập Nhật",
-    tags: [],
-    link: "https://github.com/truongly2003/send-flow",
-    image: [
-      {
-        id: 1,
-        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1761916067/sendflow/client.png",
-        description: "Trang người dùng đang cập nhật",
-      },
-      {
-        id: 2,
-        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1761916236/sendflow/admin.png",
-        description: "Trang quản lý đang cập nhật",
-      },
-      {
-        id: 3,
-        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1761915672/sendflow/home.png",
-        description: "Trang chủ ",
-      },
-    ],
-
-    keyFeatures:""
   },
 ];

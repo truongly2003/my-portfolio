@@ -36,7 +36,8 @@ const About = () => {
         { label: "Ngôn ngữ lập trình", value: "Java, JavaScript" },
         {
           label: "Frameworks & Thư viện",
-          value: "Spring Boot, ReactJS, Tailwind CSS",
+          value:
+            "Spring Boot, NestJS(Basic), ASP.NET Core(Basic), ReactJS, Tailwind CSS",
         },
         { label: "Cơ sở dữ liệu", value: "MySQL" },
         {
@@ -46,7 +47,7 @@ const About = () => {
         {
           label: "Khác",
           value:
-            "Lập trình hướng đối tượng (OOP), Thiết kế RESTful API, Xác thực & Phân quyền (JWT)",
+            "Lập trình hướng đối tượng (OOP), Thiết kế RESTful API, Xác thực & Phân quyền (JWT),Microservice",
         },
       ],
     },
@@ -169,21 +170,8 @@ const About = () => {
           </div>
         </section>
 
-        {/* Mục tiêu nghề nghiệp */}
-        <section className="mb-12 bg-gradient-to-r relative z-10 from-gray-800 to-gray-900 shadow-2xl rounded-2xl p-8 border-2 border-gray-700">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-1 h-8 bg-gray-500 rounded-full"></div>
-            <h3 className="text-2xl font-bold text-white">
-              {careerObjective.title}
-            </h3>
-          </div>
-          <p className="text-gray-300 leading-relaxed text-justify text-lg">
-            {careerObjective.description}
-          </p>
-        </section>
-
         {/* Kỹ năng */}
-        <section className="bg-gray-900 shadow-2xl relative z-10 rounded-2xl p-8 border-2 border-gray-700">
+        <section className="mb-12 bg-gray-900 shadow-2xl relative z-10 rounded-2xl p-8 border-2 border-gray-700">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-1 h-8 bg-gray-500 rounded-full"></div>
             <h3 className="text-2xl font-bold text-white">Kỹ Năng</h3>
@@ -211,7 +199,7 @@ const About = () => {
                         <span className="font-bold text-gray-300">
                           {item.label}:
                         </span>{" "}
-                        <span className="text-gray-500">{item.value}</span>
+                        <span className="text-gray-400">{item.value}</span>
                       </p>
                     )
                   )}
@@ -219,6 +207,19 @@ const About = () => {
               </div>
             ))}
           </div>
+        </section>
+
+        {/* Mục tiêu nghề nghiệp */}
+        <section className="mb-12 bg-gradient-to-r relative z-10 from-gray-800 to-gray-900 shadow-2xl rounded-2xl p-8 border-2 border-gray-700">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-1 h-8 bg-gray-500 rounded-full"></div>
+            <h3 className="text-2xl font-bold text-white">
+              {careerObjective.title}
+            </h3>
+          </div>
+          <p className="text-gray-300 leading-relaxed text-justify text-lg">
+            {careerObjective.description}
+          </p>
         </section>
       </div>
     </div>

@@ -127,7 +127,7 @@ export const projectsData = [
 
   {
     id: 2,
-    title: "Send Flow (Đang Phát Triển)",
+    title: "Send Flow",
     description: `Send-Flow là hệ thống SaaS gửi email hàng loạt,
      cho phép người dùng quản lý chiến dịch email, theo dõi hiệu quả gửi mail
       (thành công, thất bại, lượt mở, lượt click), đồng thời hỗ trợ mua gói dịch vụ

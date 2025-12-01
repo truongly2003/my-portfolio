@@ -128,43 +128,72 @@ export const projectsData = [
   {
     id: 2,
     title: "Send Flow",
-    description: `Send-Flow là hệ thống SaaS gửi email hàng loạt,
-     cho phép người dùng quản lý chiến dịch email, theo dõi hiệu quả gửi mail
-      (thành công, thất bại, lượt mở, lượt click), đồng thời hỗ trợ mua gói dịch vụ
-       và tích hợp SMTP. Hệ thống bảo mật cao với JWT,quản lý người dùng, giao dịch và thống kê hiệu suất.`,
+    description: `Send-Flow là hệ thống gửi mail hàng loạt với đầy đủ tính 
+    năng cho admin và client, tích hợp VNPay, JWT, tracking email 
+    và quản lý chiến dịch hiệu quả`,
     tags: [
       "Java Spring boot",
       "Spring Data JPA",
       "Spring Security",
-      "WebSocket",
       "RabbitMQ",
       "MySQL",
       "React JS",
+      "Thanh toán VNPay",
     ],
     link: "https://github.com/truongly2003/send-flow",
     image: [
       {
         id: 1,
-        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1761916067/sendflow/client.png",
-        description: "Trang người dùng đang cập nhật",
+        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1764587199/sendflow/login.png",
+        description: "Đăng nhập",
       },
       {
         id: 2,
-        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1761916236/sendflow/admin.png",
-        description: "Trang quản lý đang cập nhật",
+        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1764587232/sendflow/otp.png",
+        description: "",
       },
       {
         id: 3,
-        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1761915672/sendflow/home.png",
-        description: "Trang chủ ",
+        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1764586781/sendflow/dashboard-client.png",
+        description: "Tổng quan ",
+      },
+      {
+        id: 4,
+        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1764586855/sendflow/campaign.png",
+        description: "Chiến dịch ",
+      },
+      {
+        id: 5,
+        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1764587045/sendflow/sendlog-campaign.png",
+        description: "Send log ",
+      },
+      {
+        id: 6,
+        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1764587115/sendflow/smtp.png",
+        description: "Smtp ",
+      },
+      {
+        id: 7,
+        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1764587081/sendflow/notification.png",
+        description: "Thông báo ",
+      },
+      {
+        id: 8,
+        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1764587151/sendflow/payment.png",
+        description: "Thanh toán ",
+      },
+      {
+        id: 9,
+        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1764587301/sendflow/admin.png",
+        description: "Quản trị ",
       },
     ],
 
     keyFeatures: {
       "Người dùng": [
         "Bảo mật cao với xác thực và phân quyền bằng JWT.",
-        "Quản lý tài khoản dễ dàng: đăng ký, quên mật khẩu, đổi mật khẩu với xác thực Gmail.",
-        "Tích hợp SMTP và mua gói gửi mail linh hoạt.",
+        "Quản lý tài khoản dễ dàng: đăng ký, quên mật khẩu, đổi mật khẩu với xác thực Gmail với OTP",
+        "Tích hợp SMTP và mua gói gửi mail với VNPay.",
         "Tạo chiến dịch, gửi email hàng loạt và theo dõi chi tiết hiệu quả chiến dịch (thành công, thất bại, lượt mở, lượt click).",
       ],
       "Quản trị": [
@@ -192,6 +221,32 @@ export const projectsData = [
       "Bootstrap",
     ],
     link: "https://github.com/Vungoctu3007/tour-management",
+    image: [],
+    keyFeatures: {
+      responsibilities: [
+        "Xây dựng chức năng Đặt Tour, bao gồm chọn lịch trình, thông tin người tham gia và xác nhận đặt tour",
+        "Phát triển tích hợp thanh toán VNPay, xử lý các trạng thái thanh toán (chờ xử lý, thành công, thất bại)",
+        "Phát triển trang danh sách tour cho khách hàng với các tính năng: lọc, tìm kiếm và phân trang",
+      ],
+    },
+  },
+  {
+    id: 4,
+    title: "Tour",
+    description: `Phát triển một nền tảng web cho phép người dùng tìm kiếm, đặt và 
+    thanh toán các tour du lịch trực tuyến. Quy trình đặt chỗ, xác thực người dùng và 
+    tích hợp cổng thanh toán. 
+    Người dùng có thể khám phá thông tin chi tiết về tour và để lại đánh giá sau chuyến đi.`,
+    tags: [
+      "ASP.Net Core",
+      "Kiến trúc Onion",
+      "Unit of Work",
+      "SQL Server",
+      "Entity Framework Core",
+      "React",
+      "Bootstrap",
+    ],
+    link: "https://github.com/truongly2003/dotnet_book_tour",
     image: [],
     keyFeatures: {
       responsibilities: [

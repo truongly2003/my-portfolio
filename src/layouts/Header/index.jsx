@@ -18,7 +18,7 @@ const Header = () => {
         {/* Logo với gradient text */}
         <NavLink to="/" className="group">
           <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 hover:scale-105 transition-transform duration-300">
-            Trưởng Xin Chào
+            Portfolio 
           </h1>
         </NavLink>
 

@@ -1,25 +1,21 @@
-import { Phone, Mail, MapPin, Github, User, Code2, Target } from "lucide-react";
+import { Phone, Mail, MapPin, Github, Code2, Target } from "lucide-react";
 
 const About = () => {
   // ==================== GIỚI THIỆU BẢN THÂN ====================
-  const introduction = {
-    title: "Giới Thiệu Bản Thân",
-    content: `Em tên là Lý Văn Trưởng – sinh viên năm cuối Trường Đại học Sài Gòn (đang đợi tốt nghiệp) ngành công nghệ thông tin.
+//   const introduction = {
+//     title: "Giới Thiệu Bản Thân",
+//     content: `Em tên là Lý Văn Trưởng – sinh viên năm cuối Trường Đại học Sài Gòn (đang đợi tốt nghiệp) ngành công nghệ thông tin.
 
-Chuyên sâu về lập trình Backend với Java có kiến thức về Java Core, OOP, JWT và MySQL. Trong quá trình học em đã xây dựng các đồ án nhân như: "Quản lý tài chính cá nhân + chia sẻ bài viết (Kiến trúc microservices + Kafka cơ bản)", "Send-Flow (website gửi mail hàng loạt saas)".Bên cạnh Java, em cũng có làm các đồ án nhóm liên quan tới ASP.Net Core, NestJs và React Js
+// Chuyên sâu về lập trình Backend với Java có kiến thức về Java Core, OOP, JWT và MySQL. Trong quá trình học em đã xây dựng các đồ án nhân như: "Quản lý tài chính cá nhân + chia sẻ bài viết (Kiến trúc microservices + Kafka cơ bản)", "Send-Flow (website gửi mail hàng loạt saas)".Bên cạnh Java, em cũng có làm các đồ án nhóm liên quan tới ASP.Net Core, NestJs và React Js
 
-Em luôn sẵn sàng học hỏi, cầu tiến và mong muốn được làm việc trong môi trường chuyên nghiệp để vừa học vừa đóng góp.`,
-  };
+// Em luôn sẵn sàng học hỏi, cầu tiến và mong muốn được làm việc trong môi trường chuyên nghiệp để vừa học vừa đóng góp.`,
+//   };
 
   // ==================== MỤC TIÊU NGHỀ NGHIỆP ====================
   const careerObjective = {
     title: "Mục Tiêu Nghề Nghiệp",
     description: `
-Không ngừng theo đuổi sự hoàn thiện trong công nghệ, định hướng trở thành một lập trình viên Fullstack vững vàng trong ba năm tới, với khả năng làm chủ cả Backend lẫn Frontend.  
-
-Sở hữu nền tảng vững chắc về Java, Spring Boot và MySQL, đang từng bước mở rộng kỹ năng khác để xây dựng những sản phẩm web hiện đại, tối ưu trải nghiệm người dùng.
-
-Luôn sẵn sàng học hỏi, chủ động thích nghi và mong muốn được đồng hành cùng một tập thể năng động 
+Trong hai năm tới, mục tiêu của em là trở thành một Lập trình viên Backend Junior có năng lực, viết được mã sạch, duy trì hệ thống ổn định và cộng tác hiệu quả với nhóm để xây dựng các sản phẩm chất lượng cao. Em mong muốn được làm việc trong một môi trường chuyên nghiệp, nơi tôi có thể liên tục học hỏi, nâng cao kỹ năng lập trình, cải thiện thiết kế hệ thống và tối ưu hóa hiệu suất, đồng thời đóng góp vào sự phát triển nhanh chóng và bền vững của dự án.
     `.trim(),
   };
 
@@ -48,7 +44,7 @@ Luôn sẵn sàng học hỏi, chủ động thích nghi và mong muốn đượ
         {
           label: "Frameworks & Thư viện",
           value:
-            "Spring Boot, NestJS (Basic), ASP.NET Core (Basic), ReactJS, Tailwind CSS",
+            "Spring Boot, NestJS (Basic), ASP.NET Core (Basic), PHP laravel, ReactJS, Tailwind CSS",
         },
         { label: "Cơ sở dữ liệu", value: "MySQL" },
         {
@@ -164,8 +160,23 @@ Luôn sẵn sàng học hỏi, chủ động thích nghi và mong muốn đượ
           </div>
         </section>
 
+        {/* ==================== MỤC TIÊU NGHỀ NGHIỆP ==================== */}
+        <section className="mb-16 bg-gradient-to-r from-gray-800 via-gray-900 to-black rounded-2xl p-8 border-2 border-gray-700 shadow-2xl">
+          <div className="flex items-center gap-4 mb-7">
+            <div className="p-3 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl shadow-lg">
+              <Target className="w-8 h-8 text-white" />
+            </div>
+            <h3 className="text-3xl font-bold text-white">
+              {careerObjective.title}
+            </h3>
+          </div>
+
+          <p className="text-gray-300 text-lg leading-relaxed text-justify whitespace-pre-line mt-6">
+            {careerObjective.description}
+          </p>
+        </section>
         {/* ==================== GIỚI THIỆU BẢN THÂN ==================== */}
-        <section className="mb-12 relative overflow-hidden bg-gradient-to-r from-indigo-900/30 via-purple-900/20 to-pink-900/30 backdrop-blur-lg rounded-2xl p-8 border border-gray-600/60 shadow-2xl">
+        {/* <section className="mb-12 relative overflow-hidden bg-gradient-to-r from-indigo-900/30 via-purple-900/20 to-pink-900/30 backdrop-blur-lg rounded-2xl p-8 border border-gray-600/60 shadow-2xl">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-purple-600/10" />
           <div className="relative z-10">
             <div className="flex items-center gap-4 mb-7">
@@ -188,7 +199,7 @@ Luôn sẵn sàng học hỏi, chủ động thích nghi và mong muốn đượ
                 ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* ==================== KỸ NĂNG ==================== */}
         <section className="mb-12 bg-gray-900/90 backdrop-blur rounded-2xl p-8 border-2 border-gray-700 shadow-2xl">
@@ -232,21 +243,6 @@ Luôn sẵn sàng học hỏi, chủ động thích nghi và mong muốn đượ
           </div>
         </section>
 
-        {/* ==================== MỤC TIÊU NGHỀ NGHIỆP ==================== */}
-        <section className="mb-16 bg-gradient-to-r from-gray-800 via-gray-900 to-black rounded-2xl p-8 border-2 border-gray-700 shadow-2xl">
-          <div className="flex items-center gap-4 mb-7">
-            <div className="p-3 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl shadow-lg">
-              <Target className="w-8 h-8 text-white" />
-            </div>
-            <h3 className="text-3xl font-bold text-white">
-              {careerObjective.title}
-            </h3>
-          </div>
-
-          <p className="text-gray-300 text-lg leading-relaxed text-justify whitespace-pre-line mt-6">
-            {careerObjective.description}
-          </p>
-        </section>
       </div>
 
       {/* Animation CSS */}

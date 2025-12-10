@@ -16,6 +16,10 @@ export const skillsData = {
       id: 6,
       name: "NestJS (Basic)",
     },
+     {
+      id: 6,
+      name: "PHP laravel",
+    },
     {
       id: 7,
       name: "MySQL",

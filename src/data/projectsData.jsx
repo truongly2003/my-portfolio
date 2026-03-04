@@ -3,7 +3,7 @@ export const projectsData = [
     id: 1,
     title: "Finance-Share",
     description:
-      "Một nền tảng dựa trên kiến trúc microservice để quản lý tài chính cá nhân và chia sẻ bài đăng, có tính năng thông báo thời gian thực bằng WebSocket và Kafka.",
+      "A microservices-based platform for personal finance management and post sharing, featuring real-time notifications powered by WebSocket and Kafka.",
     tags: [
       "Java Spring Boot",
       "Spring Security",
@@ -17,16 +17,17 @@ export const projectsData = [
     ],
     link: "https://github.com/truongly2003/finance-share",
     image: [
-      {
+       {
         id: 1,
-        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1761629512/finance-share/login.png",
-        description: "Giao diện đăng nhập với xác thực JWT và OAuth2.",
-      },
-      {
-        id: 2,
         url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1761629566/finance-share/home.png",
         description: "Trang chủ hiển thị tổng quan tài chính và bài viết mới.",
       },
+      {
+        id: 2,
+        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1761629512/finance-share/login.png",
+        description: "Giao diện đăng nhập với xác thực JWT và OAuth2.",
+      },
+     
       {
         id: 3,
         url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1761631233/finance-share/post.png",
@@ -128,9 +129,7 @@ export const projectsData = [
   {
     id: 2,
     title: "Send Flow",
-    description: `Send-Flow là hệ thống gửi mail hàng loạt với đầy đủ tính 
-    năng cho admin và client, tích hợp VNPay, JWT, tracking email 
-    và quản lý chiến dịch hiệu quả`,
+    description: `Send-Flow is a bulk email sending system with full features for both admins and clients, integrating VNPay, JWT authentication, email tracking, and efficient campaign management.`,
     tags: [
       "Java Spring boot",
       "Spring Data JPA",
@@ -142,21 +141,23 @@ export const projectsData = [
     ],
     link: "https://github.com/truongly2003/send-flow",
     image: [
-      {
-        id: 1,
-        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1764587199/sendflow/login.png",
-        description: "Đăng nhập",
-      },
-      {
-        id: 2,
-        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1764587232/sendflow/otp.png",
-        description: "",
-      },
-      {
+       {
         id: 3,
         url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1764586781/sendflow/dashboard-client.png",
         description: "Tổng quan ",
       },
+      {
+        id: 1,
+        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1764587232/sendflow/otp.png",
+        description: "",
+      },
+      {
+        id: 2,
+        url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1764587199/sendflow/login.png",
+        description: "Đăng nhập",
+      },
+      
+     
       {
         id: 4,
         url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1764586855/sendflow/campaign.png",
@@ -207,10 +208,8 @@ export const projectsData = [
   {
     id: 3,
     title: "Book Tour",
-    description: `Phát triển một nền tảng web cho phép người dùng tìm kiếm, đặt và 
-    thanh toán các tour du lịch trực tuyến. Quy trình đặt chỗ, xác thực người dùng và 
-    tích hợp cổng thanh toán. 
-    Người dùng có thể khám phá thông tin chi tiết về tour và để lại đánh giá sau chuyến đi.`,
+    description: `Developed a web platform that allows users to search, book, and pay for travel tours online. The system includes a booking workflow, user authentication, and payment gateway integration. 
+    Users can explore detailed tour information and leave reviews after completing their trips.`,
     tags: [
       "Java Spring Boot",
       "Spring Security",
@@ -230,13 +229,30 @@ export const projectsData = [
       ],
     },
   },
-  {
+   {
     id: 4,
+    title: "PhoneStore-MVC",
+    description: `Built a full-featured Online Phone Store Platform using pure PHP with MVC architecture. Implemented product and inventory management (including Excel import), shopping cart, checkout system, invoice generation,
+     role-based authorization, and statistical reporting for sales and revenue tracking.`,
+    tags: [
+      "PHP MVC",
+      "MySQL",
+      "Bootstrap",
+    ],
+    link: "https://github.com/Vungoctu3007/shop",
+    image: [],
+    keyFeatures: {
+      responsibilities: [
+        "Xây dựng chức năng Đặt Tour, bao gồm chọn lịch trình, thông tin người tham gia và xác nhận đặt tour",
+        "Phát triển tích hợp thanh toán VNPay, xử lý các trạng thái thanh toán (chờ xử lý, thành công, thất bại)",
+        "Phát triển trang danh sách tour cho khách hàng với các tính năng: lọc, tìm kiếm và phân trang",
+      ],
+    },
+  },
+  {
+    id: 5,
     title: "Tour",
-    description: `Phát triển một nền tảng web cho phép người dùng tìm kiếm, đặt và 
-    thanh toán các tour du lịch trực tuyến. Quy trình đặt chỗ, xác thực người dùng và 
-    tích hợp cổng thanh toán. 
-    Người dùng có thể khám phá thông tin chi tiết về tour và để lại đánh giá sau chuyến đi.`,
+    description: `Developed a web platform that allows users to search, book, and pay for travel tours online. The system includes a complete booking workflow, user authentication, and payment gateway integration. Users can explore detailed tour information and leave reviews after their trips.`,
     tags: [
       "ASP.Net Core",
       "Kiến trúc Onion",

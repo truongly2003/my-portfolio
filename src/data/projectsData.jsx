@@ -17,7 +17,7 @@ export const projectsData = [
     ],
     link: "https://github.com/truongly2003/finance-share",
     image: [
-       {
+      {
         id: 1,
         url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1761629566/finance-share/home.png",
         description: "Trang chủ hiển thị tổng quan tài chính và bài viết mới.",
@@ -27,7 +27,7 @@ export const projectsData = [
         url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1761629512/finance-share/login.png",
         description: "Giao diện đăng nhập với xác thực JWT và OAuth2.",
       },
-     
+
       {
         id: 3,
         url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1761631233/finance-share/post.png",
@@ -137,11 +137,11 @@ export const projectsData = [
       "RabbitMQ",
       "MySQL",
       "React JS",
-      "Thanh toán VNPay",
+      " VNPay",
     ],
     link: "https://github.com/truongly2003/send-flow",
     image: [
-       {
+      {
         id: 3,
         url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1764586781/sendflow/dashboard-client.png",
         description: "Tổng quan ",
@@ -156,8 +156,7 @@ export const projectsData = [
         url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1764587199/sendflow/login.png",
         description: "Đăng nhập",
       },
-      
-     
+
       {
         id: 4,
         url: "https://res.cloudinary.com/dg8tvbfsg/image/upload/v1764586855/sendflow/campaign.png",
@@ -229,16 +228,12 @@ export const projectsData = [
       ],
     },
   },
-   {
+  {
     id: 4,
     title: "PhoneStore-MVC",
     description: `Built a full-featured Online Phone Store Platform using pure PHP with MVC architecture. Implemented product and inventory management (including Excel import), shopping cart, checkout system, invoice generation,
      role-based authorization, and statistical reporting for sales and revenue tracking.`,
-    tags: [
-      "PHP MVC",
-      "MySQL",
-      "Bootstrap",
-    ],
+    tags: ["PHP MVC", "MySQL", "Bootstrap"],
     link: "https://github.com/Vungoctu3007/shop",
     image: [],
     keyFeatures: {

@@ -15,7 +15,7 @@ export default function Contact() {
         {/* Email */}
         <a
           href="mailto:truonglykhong2003@gmail.com"
-          className="inline-flex justify-center items-center px-8 sm:px-10 py-4 bg-purple-600 rounded-xl font-semibold text-base sm:text-lg hover:bg-purple-700 transition duration-300 shadow-lg hover:shadow-purple-800/40"
+          className="inline-flex justify-center items-center px-8 sm:px-10 py-4 border  rounded-xl font-semibold text-base sm:text-lg  transition duration-300 shadow-lg "
         >
           Send Email
         </a>
@@ -25,7 +25,7 @@ export default function Contact() {
           href="https://github.com/truongly2003"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex justify-center items-center px-8 sm:px-10 py-4 border-2 border-purple-500/70 rounded-xl font-semibold text-base sm:text-lg hover:bg-purple-950/40 hover:border-purple-400 transition duration-300"
+          className="inline-flex justify-center items-center px-8 sm:px-10 py-4 border-2  rounded-xl font-semibold text-base sm:text-lg   transition duration-300"
         >
           GitHub
         </a>
@@ -33,7 +33,7 @@ export default function Contact() {
         {/* Phone */}
         <a
           href="tel:+84901234567"
-          className="inline-flex justify-center items-center px-8 sm:px-10 py-4 border-2 border-green-500/70 rounded-xl font-semibold text-base sm:text-lg hover:bg-green-900/40 hover:border-green-400 transition duration-300"
+          className="inline-flex justify-center items-center px-8 sm:px-10 py-4 border-2 rounded-xl font-semibold text-base sm:text-lg  transition duration-300"
         >
           Call Me
         </a>

@@ -1,7 +1,7 @@
 // src/components/sections/Hero.jsx
 export default function Hero() {
   return (
-    <div className="relative mt-[100px] flex items-center justify-center px-5 sm:px-8 lg:px-12  ">
+    <div className="relative  flex items-center justify-center px-5 sm:px-8 lg:px-12  ">
       {/* Blobs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute -top-24 -left-24 sm:-top-40 sm:-left-40 w-72 h-72 sm:w-96 sm:h-96  rounded-full blur-3xl opacity-20 animate-pulse-slow"></div>
@@ -29,16 +29,16 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 pt-4 sm:pt-8">
           <a
-            href="https://drive.google.com/file/d/1a_BxkgSm0lUUx0g6dVn_DnrLTCGP4Qj9/view?usp=sharing"
+            href="#projects"
             className="inline-flex items-center px-7 sm:px-9 md:px-10 py-3.5 sm:py-4 md:py-5 border rounded-xl sm:rounded-2xl font-semibold text-base sm:text-lg   hover:scale-105 active:scale-100 transition-all duration-300"
           >
-            View CV →
+            View Projects →
           </a>
           <a
-            href="https://github.com/truongly2003"
+            href="#about"
             className="inline-flex items-center px-7 sm:px-9 md:px-10 py-3.5 sm:py-4 md:py-5  border rounded-xl sm:rounded-2xl font-semibold text-base sm:text-lg  hover:scale-105 active:scale-100 transition-all duration-300"
           >
-            GitHub
+            Let's Connect
           </a>
         </div>
       </div>

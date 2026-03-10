@@ -77,12 +77,12 @@ export default function About() {
             </div>
           </div>
           <div className="flex flex-col sm:flex-row  gap-4 sm:gap-6  sm:pt-2">
-            <a
-              href="https://drive.google.com/file/d/1a_BxkgSm0lUUx0g6dVn_DnrLTCGP4Qj9/view?usp=sharing"
+            {/* <a
+              href="https://drive.google.com/file/d/1eaofHJYHaZH1WKocpw7zblL9SmSw0HH7/view?usp=sharing"
               className="inline-flex items-center px-7 sm:px-9 md:px-10 py-3.5 sm:py-4 md:py-5 border rounded-xl sm:rounded-2xl font-semibold text-base sm:text-lg   hover:scale-105 active:scale-100 transition-all duration-300"
             >
               View CV →
-            </a>
+            </a> */}
             <a
               href="https://github.com/truongly2003"
               className="inline-flex items-center px-7 sm:px-9 md:px-10 py-3.5 sm:py-4 md:py-5  border rounded-xl sm:rounded-2xl font-semibold text-base sm:text-lg  hover:scale-105 active:scale-100 transition-all duration-300"
